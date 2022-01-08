@@ -16,11 +16,13 @@ paths:
             application/json:
               schema:
                 type: array
-                properties:
-                  firstName:
-                    type: string
-                  lastName:
-                    type: string
+                items:
+                  type: object
+                  properties:
+                    firstName:
+                      type: string
+                    lastName:
+                      type: string
         401:
           description: "Unauthorized access"
 
