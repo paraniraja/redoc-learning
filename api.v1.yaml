@@ -1,0 +1,27 @@
+openapi: 3.0.3
+info:
+  title: User Management
+  description: User Management
+  version: 1.0.0
+servers:
+  - url: 'https://localhost'
+paths:
+  /users:
+    get:
+      description: "Get all the users information"
+      responses:
+        200:
+          description: "Success response from the server"
+          content:
+            application/json:
+              schema:
+                type: array
+                properties:
+                  firstName:
+                    type: string
+                  lastName:
+                    type: string
+        401:
+          description: "Unauthorized access"
+
+
