@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Redocly API Reference Docs</title>
+    <!-- needed for adaptive design -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:300,400,700"
+      rel="stylesheet"
+    />
+
+    <!--
+    Redocly doesn't change the outer page styles
+    -->
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="redocly_container" />
+    <script src="https://cdn.redoc.ly/reference-docs/latest/redocly-reference-docs.min.js"></script>
+    <script>
+      RedoclyReferenceDocs.init(
+        'https://raw.githubusercontent.com/paraniraja/redoc-learning/main/api.v1.yaml',
+        { licenseKey: 'orgsk_zeClhUM5KQtFSrtThU3UzuDI32k=_uP00OtbR10wmdTa/7YrGqJ4AdjfLbMN07VewoOTZfxY=' },
+        document.querySelector('#redocly_container'),
+      );
+    </script>
+  </body>
+</html>

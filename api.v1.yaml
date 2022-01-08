@@ -3,12 +3,18 @@ info:
   title: User Management
   description: User Management
   version: 1.0.0
+  license:
+    name: MIT
+    url: http://localhost
+    
 servers:
   - url: 'https://localhost'
 paths:
   /users:
     get:
-      description: "Get all the users information"
+      operationId: getUsers
+      summary: 'Gets all the users information'
+      description: "Gets all the users information"
       responses:
         200:
           description: "Success response from the server"
